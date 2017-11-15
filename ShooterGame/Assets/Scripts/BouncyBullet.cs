@@ -5,9 +5,14 @@ using UnityEngine;
 public class BouncyBullet : MonoBehaviour 
 {
 	public float force;
+	private bool wasForceAdded = false;
 
-	void Start () 
+	void Update () 
 	{
-		this.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * force, ForceMode.Impulse);
+		if (wasForceAdded == false)
+		{
+			this.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * force, ForceMode.Impulse);
+			wasForceAdded = true;
+		}
 	}
 }

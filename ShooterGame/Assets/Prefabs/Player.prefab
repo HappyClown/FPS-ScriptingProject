@@ -150,7 +150,7 @@ GameObject:
   - component: {fileID: 114847493413913572}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -681,8 +681,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 476e410b747fad448b51c0d9f6968f04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curntBullet: {fileID: 0}
-  bouncyBullet: {fileID: 0}
+  curntBullet: {fileID: 1602357708382762, guid: c2874c06b43420e40b17865ebfbe121e,
+    type: 2}
+  bouncyBullet: {fileID: 1602357708382762, guid: c2874c06b43420e40b17865ebfbe121e,
+    type: 2}
   bulletSpawnPoint: {fileID: 1172830897558752}
 --- !u!124 &124291749298877032
 Behaviour:
