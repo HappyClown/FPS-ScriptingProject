@@ -20,6 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4382724033717322}
   - component: {fileID: 114496610575322406}
+  - component: {fileID: 114514705909627546}
+  - component: {fileID: 114018480134825394}
   m_Layer: 0
   m_Name: GameEngine
   m_TagString: Untagged
@@ -40,6 +42,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114018480134825394
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1238926846532626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23af520112f99de41a17305fdfe7b842, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyCount: 0
+  enemyList: []
+  winText: {fileID: 0}
 --- !u!114 &114496610575322406
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51,3 +67,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51358a1e29bb4a040838c3bc0ada8209, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114514705909627546
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1238926846532626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22a2e423c4d72dd44a1de1f5294daf80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  difficultyTimer: 0
+  difficultyNewLevel: 10
+  diffLevel: 0

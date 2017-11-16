@@ -8,29 +8,36 @@ public class EnemyAi : MonoBehaviour
 	private NavMeshAgent agent;
 	private GameObject player;
 
-	public float aggroRange;
+	public float aggroSprintRange;
 	public float distToPlyr;
+	public float sprintSpeed;
+	public float regularSpeed;
 
 
 	void Start () 
 	{
 		agent = GetComponent<NavMeshAgent>();
 		player = GameObject.FindWithTag("Player");
+
+		agent.speed = regularSpeed;
 	}
 	
 
 	void Update () 
 	{
+		agent.destination = player.transform.position;
+		
+
 		distToPlyr = Vector3.Distance(player.transform.position, this.transform.position);
 
-		if (distToPlyr <= aggroRange)
+		if (distToPlyr <= aggroSprintRange)
 		{
-			agent.destination = player.transform.position;
-			agent.isStopped = false;
+			agent.speed = sprintSpeed;
+
 		}
-		else if (distToPlyr > aggroRange)
+		else if (distToPlyr > aggroSprintRange)
 		{
-			agent.isStopped = true;
+			agent.speed = regularSpeed;
 		}
 	}
 }

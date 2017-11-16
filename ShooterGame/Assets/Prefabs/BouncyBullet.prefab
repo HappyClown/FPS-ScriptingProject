@@ -25,9 +25,11 @@ GameObject:
   - component: {fileID: 54543936933342530}
   - component: {fileID: 114303734767472090}
   - component: {fileID: 114995283680952990}
+  - component: {fileID: 114327274616568110}
+  - component: {fileID: 114070862708294556}
   m_Layer: 8
   m_Name: BouncyBullet
-  m_TagString: Untagged
+  m_TagString: PlayerAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,7 +102,19 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 2
+  m_CollisionDetection: 1
+--- !u!114 &114070862708294556
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1602357708382762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ffe3d9d9aa048d4983ad7216b9bdf2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  otherCollisionTag: Enemy
 --- !u!114 &114303734767472090
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -113,6 +127,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 15
+--- !u!114 &114327274616568110
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1602357708382762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2a2b8f269f64b24faa2c5b310d0d260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 1950287194441244, guid: 438238b6d0f248f408551d1a76a91c1a, type: 2}
+  otherCollisionTag: Enemy
 --- !u!114 &114995283680952990
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -136,5 +163,5 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.6
   m_Center: {x: 0, y: 0, z: 0}
