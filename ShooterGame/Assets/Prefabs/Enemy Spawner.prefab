@@ -608,4 +608,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1068705519540244, guid: c09431d712262484b92618e30e2af9ea, type: 2}
-  spawnCooldown: 5
+  spawnCooldown: 10

@@ -22,6 +22,11 @@ public class PlayerLife : MonoBehaviour
 			deadText.SetActive(true);
 			Time.timeScale = 0;
 		}
+
+		if(currentHealth > totalHealth)
+		{
+			currentHealth = totalHealth;
+		}
 	}
 
 	void OnCollisionEnter (Collision other)

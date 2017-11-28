@@ -24,6 +24,11 @@ public class EnemyLife : MonoBehaviour
 		{
 			Destroy(this.gameObject);
 		}
+
+		if(currentHealth > totalHealth)
+		{
+			currentHealth = totalHealth;
+		}
 		
 	}
 
