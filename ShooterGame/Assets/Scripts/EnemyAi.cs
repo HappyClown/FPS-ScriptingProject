@@ -7,6 +7,8 @@ public class EnemyAi : MonoBehaviour
 {
 	private NavMeshAgent agent;
 	private GameObject player;
+	private EnemyLife enemyLifeScript;
+
 
 	public float aggroSprintRange;
 	public float distToPlyr;
@@ -18,6 +20,7 @@ public class EnemyAi : MonoBehaviour
 	{
 		agent = GetComponent<NavMeshAgent>();
 		player = GameObject.FindWithTag("Player");
+		enemyLifeScript = GetComponent<EnemyLife>();
 
 		agent.speed = regularSpeed;
 	}

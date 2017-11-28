@@ -140,7 +140,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1158569798334418}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00000058114523}
-  m_LocalPosition: {x: 10.28, y: 1, z: 14.97}
+  m_LocalPosition: {x: 4.81, y: 1, z: -1.04}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children:
   - {fileID: 4734151706670054}
@@ -515,11 +515,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackRange: 15
-  distToPlyr: 0
   regularSpeed: 3
   firingSpeed: 1
-  attackTimer: 0
   attackCooldown: 2.5
+  enemyAmmo: 3
   enemyBullet: {fileID: 1194269084361088, guid: 7894e3381ecad944bb5b23b254348b04,
     type: 2}
   bulletSpawnPoint: {fileID: 0}

@@ -304,6 +304,62 @@ Transform:
   m_PrefabParentObject: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f,
     type: 2}
   m_PrefabInternal: {fileID: 120708581}
+--- !u!1001 &123713638
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 483601228}
+    m_Modifications:
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 24.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_RootOrder
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833413802079610, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_Name
+      value: Wall 10x10 (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 23240343345365720, guid: 896a7b74184d34d4d9a20721eeaea95f,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ca72571474529d2499ced426e92dc214, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &123713639 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f,
+    type: 2}
+  m_PrefabInternal: {fileID: 123713638}
 --- !u!4 &128138041 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f,
@@ -887,11 +943,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4691491881403902, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1666563584765738, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
       propertyPath: m_Name
       value: PickUp Ammo (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1666563584765738, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
+      propertyPath: m_TagString
+      value: AmmoPickUp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
@@ -1055,12 +1115,12 @@ Prefab:
     - target: {fileID: 224544908105668502, guid: 0bf132d084a749343b207d488c00410c,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 229.5
+      value: 173.5
       objectReference: {fileID: 0}
     - target: {fileID: 224544908105668502, guid: 0bf132d084a749343b207d488c00410c,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 129
+      value: 97.5
       objectReference: {fileID: 0}
     - target: {fileID: 224544908105668502, guid: 0bf132d084a749343b207d488c00410c,
         type: 2}
@@ -1166,12 +1226,16 @@ Prefab:
     - target: {fileID: 224056968646745516, guid: 0bf132d084a749343b207d488c00410c,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -162
+      value: -174.29999
       objectReference: {fileID: 0}
     - target: {fileID: 224056968646745516, guid: 0bf132d084a749343b207d488c00410c,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -162
+      value: -174.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1718872855318134, guid: 0bf132d084a749343b207d488c00410c, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0bf132d084a749343b207d488c00410c, type: 2}
@@ -1186,6 +1250,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4691491881403902, guid: b43ce2e0f91e7764abf86ccb93045c4f,
     type: 2}
   m_PrefabInternal: {fileID: 367658417}
+--- !u!114 &481318687 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114444516458423234, guid: 0bf132d084a749343b207d488c00410c,
+    type: 2}
+  m_PrefabInternal: {fileID: 419330417}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &483601227
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,6 +1322,10 @@ Transform:
   - {fileID: 220622525}
   - {fileID: 187927371}
   - {fileID: 1562583669}
+  - {fileID: 1779606235}
+  - {fileID: 123713639}
+  - {fileID: 1656082074}
+  - {fileID: 1614244425}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1493,11 +1567,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4691491881403902, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1666563584765738, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
       propertyPath: m_Name
       value: PickUp Ammo (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1666563584765738, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
+      propertyPath: m_TagString
+      value: AmmoPickUp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
@@ -1836,12 +1914,12 @@ Prefab:
     - target: {fileID: 224240274999268446, guid: 1a1f21327a643c44b801b942e3c1b085,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 229.5
+      value: 173.5
       objectReference: {fileID: 0}
     - target: {fileID: 224240274999268446, guid: 1a1f21327a643c44b801b942e3c1b085,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 129
+      value: 97.5
       objectReference: {fileID: 0}
     - target: {fileID: 224240274999268446, guid: 1a1f21327a643c44b801b942e3c1b085,
         type: 2}
@@ -1871,7 +1949,7 @@ Prefab:
     - target: {fileID: 224240274999268446, guid: 1a1f21327a643c44b801b942e3c1b085,
         type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 224240274999268446, guid: 1a1f21327a643c44b801b942e3c1b085,
         type: 2}
@@ -2328,11 +2406,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4691491881403902, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1666563584765738, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
       propertyPath: m_Name
       value: PickUp Ammo (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1666563584765738, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
+      propertyPath: m_TagString
+      value: AmmoPickUp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
@@ -2447,12 +2529,12 @@ Prefab:
     - target: {fileID: 224240274999268446, guid: 1a1f21327a643c44b801b942e3c1b085,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 229.5
+      value: 173.5
       objectReference: {fileID: 0}
     - target: {fileID: 224240274999268446, guid: 1a1f21327a643c44b801b942e3c1b085,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 129
+      value: 97.5
       objectReference: {fileID: 0}
     - target: {fileID: 224240274999268446, guid: 1a1f21327a643c44b801b942e3c1b085,
         type: 2}
@@ -2482,7 +2564,7 @@ Prefab:
     - target: {fileID: 224240274999268446, guid: 1a1f21327a643c44b801b942e3c1b085,
         type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 224240274999268446, guid: 1a1f21327a643c44b801b942e3c1b085,
         type: 2}
@@ -2806,11 +2888,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4974112717903220, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1925381314366232, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
       propertyPath: m_Name
       value: PickUp Health (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1925381314366232, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
+      propertyPath: m_TagString
+      value: HealthPickUp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
@@ -2924,6 +3010,10 @@ Prefab:
     - target: {fileID: 4454744956189186, guid: c09431d712262484b92618e30e2af9ea, type: 2}
       propertyPath: m_RootOrder
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1068705519540244, guid: c09431d712262484b92618e30e2af9ea, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c09431d712262484b92618e30e2af9ea, type: 2}
@@ -3089,7 +3179,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4088392703909874, guid: 7dd36ea2351797542ab4caabc9304c16, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 10.28
+      value: 4.81
       objectReference: {fileID: 0}
     - target: {fileID: 4088392703909874, guid: 7dd36ea2351797542ab4caabc9304c16, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3097,7 +3187,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4088392703909874, guid: 7dd36ea2351797542ab4caabc9304c16, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 14.97
+      value: -1.04
       objectReference: {fileID: 0}
     - target: {fileID: 4088392703909874, guid: 7dd36ea2351797542ab4caabc9304c16, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3201,11 +3291,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4974112717903220, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1925381314366232, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
       propertyPath: m_Name
       value: PickUp Health (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1925381314366232, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
+      propertyPath: m_TagString
+      value: HealthPickUp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
@@ -3294,11 +3388,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4974112717903220, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1925381314366232, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
       propertyPath: m_Name
       value: PickUp Health (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1925381314366232, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
+      propertyPath: m_TagString
+      value: HealthPickUp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
@@ -3776,6 +3874,10 @@ Prefab:
       propertyPath: m_Name
       value: PickUp Health (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1925381314366232, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
+      propertyPath: m_TagString
+      value: HealthPickUp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
   m_IsPrefabParent: 0
@@ -3944,11 +4046,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4691491881403902, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1666563584765738, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
       propertyPath: m_Name
       value: PickUp Ammo (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1666563584765738, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
+      propertyPath: m_TagString
+      value: AmmoPickUp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
@@ -4320,6 +4426,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1850520877210888, guid: b8398dca67fbb3041a18d7b5cccdd21d, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b8398dca67fbb3041a18d7b5cccdd21d, type: 2}
   m_IsPrefabParent: 0
@@ -4366,6 +4476,10 @@ Prefab:
       propertyPath: m_Name
       value: PickUp Health (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1925381314366232, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
+      propertyPath: m_TagString
+      value: HealthPickUp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
   m_IsPrefabParent: 0
@@ -4411,11 +4525,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4974112717903220, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1925381314366232, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
       propertyPath: m_Name
       value: PickUp Health (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1925381314366232, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
+      propertyPath: m_TagString
+      value: HealthPickUp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
@@ -4843,6 +4961,62 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &1614244424
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 483601228}
+    m_Modifications:
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -10.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 27.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 24.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_RootOrder
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833413802079610, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_Name
+      value: Wall 10x10 (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 23240343345365720, guid: 896a7b74184d34d4d9a20721eeaea95f,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ca72571474529d2499ced426e92dc214, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1614244425 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1614244424}
 --- !u!1 &1634877895
 GameObject:
   m_ObjectHideFlags: 0
@@ -4879,6 +5053,62 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1656082073
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 483601228}
+    m_Modifications:
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -19.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 27.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 24.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_RootOrder
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833413802079610, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_Name
+      value: Wall 10x10 (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 23240343345365720, guid: 896a7b74184d34d4d9a20721eeaea95f,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ca72571474529d2499ced426e92dc214, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1656082074 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1656082073}
 --- !u!4 &1705179502 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4691491881403902, guid: b43ce2e0f91e7764abf86ccb93045c4f,
@@ -4978,34 +5208,74 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1666563584765738, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
+      propertyPath: m_TagString
+      value: AmmoPickUp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1709147485 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1694382134520558, guid: 66355ae28f5761f4c850c975f2e774c3,
-    type: 2}
-  m_PrefabInternal: {fileID: 2126448669}
---- !u!54 &1709147493
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1709147485}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!4 &1725605358 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f,
     type: 2}
   m_PrefabInternal: {fileID: 1046066802}
+--- !u!1001 &1779606234
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 483601228}
+    m_Modifications:
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -9.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 24.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_RootOrder
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833413802079610, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+      propertyPath: m_Name
+      value: Wall 10x10 (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 23240343345365720, guid: 896a7b74184d34d4d9a20721eeaea95f,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ca72571474529d2499ced426e92dc214, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 896a7b74184d34d4d9a20721eeaea95f, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1779606235 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4998863507875124, guid: 896a7b74184d34d4d9a20721eeaea95f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1779606234}
 --- !u!4 &1790233084 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4691491881403902, guid: b43ce2e0f91e7764abf86ccb93045c4f,
@@ -5248,6 +5518,10 @@ Prefab:
       propertyPath: m_Name
       value: PickUp Ammo (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1666563584765738, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
+      propertyPath: m_TagString
+      value: AmmoPickUp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
   m_IsPrefabParent: 0
@@ -5344,6 +5618,10 @@ Prefab:
     - target: {fileID: 1666563584765738, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
       propertyPath: m_Name
       value: PickUp Ammo (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1666563584765738, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
+      propertyPath: m_TagString
+      value: AmmoPickUp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
@@ -5578,11 +5856,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4691491881403902, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1666563584765738, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
       propertyPath: m_Name
       value: PickUp Ammo (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1666563584765738, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
+      propertyPath: m_TagString
+      value: AmmoPickUp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b43ce2e0f91e7764abf86ccb93045c4f, type: 2}
@@ -5635,6 +5917,10 @@ Prefab:
       propertyPath: m_Name
       value: PickUp Health (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1925381314366232, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
+      propertyPath: m_TagString
+      value: HealthPickUp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
   m_IsPrefabParent: 0
@@ -5675,11 +5961,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4974112717903220, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1925381314366232, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
       propertyPath: m_Name
       value: PickUp Health (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1925381314366232, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
+      propertyPath: m_TagString
+      value: HealthPickUp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 426761ea5861ecd498adb0ec5fe82918, type: 2}
@@ -6052,11 +6342,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 114291220700886682, guid: 66355ae28f5761f4c850c975f2e774c3,
-        type: 2}
-      propertyPath: deadText
-      value: 
-      objectReference: {fileID: 368502623}
     - target: {fileID: 114847493413913572, guid: 66355ae28f5761f4c850c975f2e774c3,
         type: 2}
       propertyPath: clip
@@ -6067,6 +6352,16 @@ Prefab:
       propertyPath: totalAmmo
       value: 
       objectReference: {fileID: 375219370}
+    - target: {fileID: 114291220700886682, guid: 66355ae28f5761f4c850c975f2e774c3,
+        type: 2}
+      propertyPath: deadText
+      value: 
+      objectReference: {fileID: 368502623}
+    - target: {fileID: 114847493413913572, guid: 66355ae28f5761f4c850c975f2e774c3,
+        type: 2}
+      propertyPath: ammoType
+      value: 
+      objectReference: {fileID: 481318687}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66355ae28f5761f4c850c975f2e774c3, type: 2}
   m_IsPrefabParent: 0

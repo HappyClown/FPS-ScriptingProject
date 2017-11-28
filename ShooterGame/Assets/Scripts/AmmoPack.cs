@@ -11,7 +11,7 @@ public class AmmoPack : MonoBehaviour
 	{
 		if (other.tag == "Enemy")
 		{
-			//other.GetComponent<EnemyLife>().currentHealth += hpHealed;
+			other.GetComponent<EnemyShooting>().enemyAmmo += Mathf.Abs(ammoAmount / 4);
 			Destroy(this.gameObject);
 		}
 

@@ -24,26 +24,45 @@ public class Shooting : MonoBehaviour
 
 	public Text clip;
 	public Text totalAmmo;
+	public Text ammoType;
 
 
+	void Start ()
+	{
+		 ammoType.text = "Type: Bouncy";
+	}
 	
 	void Update () 
 	{
 		attackTimer += Time.deltaTime;
 
+		Reload();
 
 		if (Input.GetMouseButtonDown(0) && attackTimer > attackCooldown && playerInClipCount > 0)
-		{
-			
+		{	
 			ShootBouncyBullet();
 
 			ShootRocketBullet();
 
 			ShootNormalBullet();
-
 		}
 
 
+		if (Input.GetKey("1"))
+		{ curntBullet = bouncyBullet; ammoType.text = "Type: Bouncy"; }
+		if (Input.GetKey("2"))
+		{ curntBullet = rocketBullet; ammoType.text = "Type: Rocket"; }
+		if (Input.GetKey("3"))
+		{ curntBullet = normalBullet; ammoType.text = "Type: Normal"; }
+
+
+		totalAmmo.text = "Ammo: " + playerAmmoCount;
+		clip.text = "Clip: " + playerInClipCount + "/" + playerMaxClipAmnt;
+	}
+
+
+	void Reload()
+	{
 		if (Input.GetKey("r") && playerAmmoCount > 0)
 		{
 			if (playerAmmoCount >= (playerMaxClipAmnt - playerInClipCount))
@@ -60,20 +79,7 @@ public class Shooting : MonoBehaviour
 				playerAmmoCount = 0;	
 			}
 		}
-
-		if (Input.GetKey("1"))
-		{ curntBullet = bouncyBullet; }
-		if (Input.GetKey("2"))
-		{ curntBullet = rocketBullet; }
-		if (Input.GetKey("3"))
-		{ curntBullet = normalBullet; }
-
-
-		totalAmmo.text = "Ammo: " + playerAmmoCount;
-		clip.text = "Clip: " + playerInClipCount + "/" + playerMaxClipAmnt;
 	}
-
-
 
 
 	void ShootBouncyBullet()
