@@ -11,14 +11,20 @@ public class HealthPack : MonoBehaviour
 	{
 		if (other.tag == "Enemy")
 		{
-			other.GetComponent<EnemyLife>().currentHealth += hpHealed;
-			Destroy(this.gameObject);
+			if (other.GetComponent<EnemyLife>().currentHealth < other.GetComponent<EnemyLife>().totalHealth)
+			{
+				other.GetComponent<EnemyLife>().currentHealth += hpHealed;
+				Destroy(this.gameObject);
+			}
 		}
 
 		if (other.tag == "Player")
 		{
-			other.GetComponent<PlayerLife>().currentHealth += hpHealed;
-			Destroy(this.gameObject);
+			if (other.GetComponent<PlayerLife>().currentHealth < other.GetComponent<PlayerLife>().totalHealth)
+			{
+				other.GetComponent<PlayerLife>().currentHealth += hpHealed;
+				Destroy(this.gameObject);
+			}
 		}
 	}
 }

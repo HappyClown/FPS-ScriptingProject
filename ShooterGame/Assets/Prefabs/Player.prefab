@@ -117,6 +117,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1494607780614496
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4636860730658590}
+  m_Layer: 0
+  m_Name: Gun Group
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1511323514183458
 GameObject:
   m_ObjectHideFlags: 1
@@ -181,13 +196,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.5, z: -0.07999998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4618747736491182}
-  - {fileID: 4434526177210140}
-  - {fileID: 4503023756332294}
-  - {fileID: 4952766340513824}
-  - {fileID: 4937506269134382}
-  - {fileID: 4085190930865466}
-  - {fileID: 4083346285353972}
+  - {fileID: 4636860730658590}
   m_Father: {fileID: 4596254772951856}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -198,10 +207,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1754327015776078}
   m_LocalRotation: {x: -0.076434456, y: -0, z: -0, w: 0.9970746}
-  m_LocalPosition: {x: 0.53, y: -0.32700002, z: 0.399}
+  m_LocalPosition: {x: 0.53, y: -0.32700002, z: 0.39900023}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children: []
-  m_Father: {fileID: 4042062572476074}
+  m_Father: {fileID: 4636860730658590}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4085190930865466
@@ -211,10 +220,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1172830897558752}
   m_LocalRotation: {x: -0.076434456, y: -0, z: -0, w: 0.9970746}
-  m_LocalPosition: {x: 0.53, y: -0.22268057, z: 1.072269}
+  m_LocalPosition: {x: 0.53, y: -0.22268057, z: 1.0722685}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.25}
   m_Children: []
-  m_Father: {fileID: 4042062572476074}
+  m_Father: {fileID: 4636860730658590}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4434526177210140
@@ -224,10 +233,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1106510984840602}
   m_LocalRotation: {x: -0.2059251, y: -0, z: -0, w: 0.9785678}
-  m_LocalPosition: {x: 0.53, y: -0.17499995, z: 0.773}
-  m_LocalScale: {x: 0.040000003, y: 0.040000003, z: 0.09999999}
+  m_LocalPosition: {x: 0.53, y: -0.17499995, z: 0.7729998}
+  m_LocalScale: {x: 0.040000003, y: 0.040000003, z: 0.09999997}
   m_Children: []
-  m_Father: {fileID: 4042062572476074}
+  m_Father: {fileID: 4636860730658590}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -23.767, y: 0, z: 0}
 --- !u!4 &4503023756332294
@@ -237,10 +246,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1511323514183458}
   m_LocalRotation: {x: -0.07230024, y: -0, z: -0, w: 0.99738294}
-  m_LocalPosition: {x: 0.53, y: -0.15269995, z: 0.83831996}
+  m_LocalPosition: {x: 0.53, y: -0.15269995, z: 0.83831984}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.05}
   m_Children: []
-  m_Father: {fileID: 4042062572476074}
+  m_Father: {fileID: 4636860730658590}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -8.292001, y: 0, z: 0}
 --- !u!4 &4596254772951856
@@ -264,12 +273,32 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1191793953097382}
   m_LocalRotation: {x: -0.076434456, y: -0, z: -0, w: 0.9970746}
-  m_LocalPosition: {x: 0.53, y: -0.32700002, z: 0.399}
+  m_LocalPosition: {x: 0.53, y: -0.32700002, z: 0.39900023}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children: []
-  m_Father: {fileID: 4042062572476074}
+  m_Father: {fileID: 4636860730658590}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -8.767, y: 0, z: 0}
+--- !u!4 &4636860730658590
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1494607780614496}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4618747736491182}
+  - {fileID: 4434526177210140}
+  - {fileID: 4503023756332294}
+  - {fileID: 4952766340513824}
+  - {fileID: 4937506269134382}
+  - {fileID: 4085190930865466}
+  - {fileID: 4083346285353972}
+  m_Father: {fileID: 4042062572476074}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4937506269134382
 Transform:
   m_ObjectHideFlags: 1
@@ -277,10 +306,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1485699929520444}
   m_LocalRotation: {x: -0.076434456, y: -0, z: -0, w: 0.9970746}
-  m_LocalPosition: {x: 0.53, y: -0.258, z: 0.847}
-  m_LocalScale: {x: 0.195, y: 0.195, z: 0.25}
+  m_LocalPosition: {x: 0.53, y: -0.25800002, z: 0.8470002}
+  m_LocalScale: {x: 0.195, y: 0.19499996, z: 0.25}
   m_Children: []
-  m_Father: {fileID: 4042062572476074}
+  m_Father: {fileID: 4636860730658590}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -8.767, y: 0, z: 0}
 --- !u!4 &4952766340513824
@@ -290,10 +319,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1278517395189544}
   m_LocalRotation: {x: -0.076434456, y: -0, z: -0, w: 0.9970746}
-  m_LocalPosition: {x: 0.53, y: -0.32700002, z: 0.399}
-  m_LocalScale: {x: 0.35, y: 0.06, z: 0.8}
+  m_LocalPosition: {x: 0.53, y: -0.32700002, z: 0.39900023}
+  m_LocalScale: {x: 0.35, y: 0.05999999, z: 0.8}
   m_Children: []
-  m_Father: {fileID: 4042062572476074}
+  m_Father: {fileID: 4636860730658590}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -8.767, y: 0, z: 0}
 --- !u!20 &20588747076813106
@@ -698,7 +727,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   curntBullet: {fileID: 1602357708382762, guid: c2874c06b43420e40b17865ebfbe121e,
     type: 2}
+  bullets:
+  - {fileID: 1602357708382762, guid: c2874c06b43420e40b17865ebfbe121e, type: 2}
+  - {fileID: 1806171898303316, guid: 4af7e10de1669be45ba89f5b75fdff54, type: 2}
+  - {fileID: 1968634402087696, guid: 5cff83a8ba6a86c4e9d6034dd7f0af10, type: 2}
   bouncyBullet: {fileID: 1602357708382762, guid: c2874c06b43420e40b17865ebfbe121e,
+    type: 2}
+  rocketBullet: {fileID: 1806171898303316, guid: 4af7e10de1669be45ba89f5b75fdff54,
+    type: 2}
+  normalBullet: {fileID: 1968634402087696, guid: 5cff83a8ba6a86c4e9d6034dd7f0af10,
     type: 2}
   bulletSpawnPoint: {fileID: 1172830897558752}
   attackCooldown: 0.5
